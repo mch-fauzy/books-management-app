@@ -23,10 +23,10 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Button href="/register" className="btn-sm btn-outline">
+              <Button href="/auth/register" className="btn-sm btn-outline">
                 Register
               </Button>
-              <Button href="/login" className="btn-sm">
+              <Button href="/auth/login" className="btn-sm">
                 Login
               </Button>
             </>

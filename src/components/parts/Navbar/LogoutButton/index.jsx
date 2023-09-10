@@ -11,7 +11,7 @@ const LogoutButton = () => {
   const handleLogout = useCallback(async () => {
     await logout();
 
-    router.replace('/login');
+    router.replace('/auth/login');
     router.refresh();
   }, [router]);
 

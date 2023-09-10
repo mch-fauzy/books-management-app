@@ -43,7 +43,7 @@ const RegisterForm = () => {
     onSuccess: () => {
       toast.success('Account created');
 
-      router.push('/login');
+      router.push('/auth/login');
     },
     onError: (error) => {
       toast.error(error.message);
@@ -125,7 +125,7 @@ const RegisterForm = () => {
       </Button>
 
       <p className="text-center mt-3">
-        Already Have an account? <Link href="/login" className="link link-primary">Login</Link>
+        Already Have an account? <Link href="/auth/login" className="link link-primary">Login</Link>
       </p>
     </form>
   )

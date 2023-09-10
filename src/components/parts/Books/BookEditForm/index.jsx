@@ -80,7 +80,7 @@ const BookEditForm = ({ initialValue }) => {
           />
         </FormControl>
 
-        <FormControl label="Book year" id="year">
+        <FormControl label="Publish Year" id="year">
           <TextInput
             type="number"
             id="year"

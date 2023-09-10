@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
 
 const GUEST_PATHS = [
-  '/login',
-  '/register',
+  '/auth/login',
+  '/auth/register',
   '/'
 ];
 
@@ -17,7 +17,7 @@ export function middleware(request) {
   }
 
   if (!isGuestPath && !token) {
-    return NextResponse.redirect(new URL('/login', request.url));
+    return NextResponse.redirect(new URL('/auth/login', request.url));
   }
 
   return NextResponse.next();
@@ -26,8 +26,8 @@ export function middleware(request) {
 export const config = {
   matcher: [
     '/',
-    '/login',
-    '/register',
+    '/auth/login',
+    '/auth/register',
     '/books/:path*'
   ]
 }
