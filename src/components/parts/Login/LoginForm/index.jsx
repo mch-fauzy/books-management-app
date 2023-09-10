@@ -70,7 +70,7 @@ const LoginForm = () => {
       </Button>
 
       <p className="text-center mt-3">
-        Don&apos;t have an account? <Link href="/register" className="link link-primary">Register</Link>
+        Don&apos;t have an account? <Link href="/auth/register" className="link link-primary">Register</Link>
       </p>
     </form>
   )
